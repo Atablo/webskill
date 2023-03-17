@@ -16,3 +16,6 @@ table.striped tr:nth-child(even) {
 .text-blue{
     color: #68a8e9;
 }
+.border-n{
+    border-radius: 0%;
+ }

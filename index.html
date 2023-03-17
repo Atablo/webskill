@@ -10,17 +10,16 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-sm bg-green">
-      <a class="navbar-brand" href="#"><img src="logos/logo.png" alt="" width="100"></a>
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html"><img src="logos/logo.png" alt="" width="100"></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -29,37 +28,30 @@
             <a class="nav-link " href="index.html" aria-current="page">Inicio </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Seleccionar categoria</a>
+            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccionar categoria</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
               <a class="dropdown-item" href="#">Anfibios</a>
               <a class="dropdown-item" href="#">Aves</a>
               <a class="dropdown-item" href="#">Mamiferos</a>
               <a class="dropdown-item" href="#">Peces</a>
               <a class="dropdown-item" href="catalogo.html">Reptiles</a>
-              <!--quitar mas tarde as dos lineas de abajo-->
-              <a class="nav-link" href="catalogo.html">catalogo</a>
-              <a class="nav-link" href="quienessomos.html">quienes somos</a>
             </div>
-          <li class="nav-item">
-            <a class="nav-link" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalId">Registrate
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" aria-current="page" data-bs-toggle="modal"
-              data-bs-target="#modaIniciosesion">Inicia Sesion </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalId">Registrate </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#modaIniciosesion">Inicia Sesion </a>
+            </li>
           </li>
         </ul>
       </div>
-    </nav>
+  </nav>
   </header>
-
+ 
   <!-- Modal trigger button -->
   <!-- Modal Body -->
   <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-  <div class="modal fade " id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
-    aria-labelledby="modalTitleId" aria-hidden="true">
+  <div class="modal fade " id="modalId" tabindex="-1"  data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered " role="document">
       <div class="modal-content">
         <div class="">
@@ -68,23 +60,23 @@
         <div class="modal-body">
           <div class="mb-3">
             <form action="post">
-              <label for="" class="form-label mt-2">Usuario</label>
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-              <label for="" class="form-label mt-2">Contraseña</label>
-              <input type="password" class="form-control" name="" id="" placeholder="">
-              <label for="" class="form-label mt-2">Repite la contraseña</label>
-              <input type="password" class="form-control" name="" id="" placeholder="">
-              <label for="" class="form-label">Email</label>
-              <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId">
-              <label for="" class="form-label mt-2">Direccion</label>
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-              <label for="" class="form-label mt-2">Telefono</label>
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-            </form>
+            <label for="" class="form-label mt-2">Usuario</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            <label for="" class="form-label mt-2">Contraseña</label>
+            <input type="password" class="form-control" name="" id="" placeholder="">
+            <label for="" class="form-label mt-2">Repite la contraseña</label>
+            <input type="password" class="form-control" name="" id="" placeholder="">
+            <label for="" class="form-label">Email</label>
+            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId">
+            <label for="" class="form-label mt-2">Direccion</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            <label for="" class="form-label mt-2">Telefono</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </form>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-success  w-100 text-white">Entrar</button>
+          <button type="button" class="btn btn-success  w-100 text-white close" data-dismiss="modal" >Entrar</button>
         </div>
       </div>
     </div>
@@ -92,8 +84,7 @@
   <!-- Modal trigger button -->
   <!-- Modal Body -->
   <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-  <div class="modal fade" id="modaIniciosesion" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-    role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+  <div class="modal fade" id="modaIniciosesion" tabindex="-1"  data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
       <div class="modal-content">
         <div class="">
@@ -102,61 +93,118 @@
         <div class="modal-body">
           <div class="mb-3">
             <form action="post">
-              <label for="" class="form-label mt-2">Usuario</label>
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-              <label for="" class="form-label mt-2">Contraseña</label>
-              <input type="password" class="form-control" name="" id="" placeholder="">
-            </form>
+            <label for="" class="form-label mt-2">Usuario</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            <label for="" class="form-label mt-2">Contraseña</label>
+            <input type="password" class="form-control" name="" id="" placeholder="">
+          </form>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-success w-100 text-white">Entrar</button>
+          <button type="button" class="btn btn-success w-100 text-white close" >Entrar</button>
         </div>
       </div>
     </div>
   </div>
-  <script>
-    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-  </script>
+<script>
+  const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+</script>
 
-  <div id="carouselId" class="carousel slide container mt-5" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide">
-      </li>
-      <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-      <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="third slide"></li>
-      <li data-bs-target="#carouselId" data-bs-slide-to="4" aria-label="four slide"></li>
-      <li data-bs-target="#carouselId" data-bs-slide-to="5" aria-label="five slide"></li>
 
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <img src="carrusel/anfibios1.png" class="w-100 d-block" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img src="carrusel/aves1.png" class="w-100 d-block" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img src="carrusel/mamiferos1.png" class="w-100 d-block" alt="Third slide">
-      </div>
-      <div class="carousel-item">
-        <img src="carrusel/peces1.png" class="w-100 d-block" alt="Third slide">
-      </div>
-      <div class="carousel-item">
-        <img src="carrusel/reptiles1.png" class="w-100 d-block" alt="Third slide">
+
+
+<div id="carouselId" class="carousel slide container mt-4" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+    <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+    <li data-bs-target="#carouselId" data-bs-slide-to="4" aria-label="Fifth slide"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img src="carrusel/anfibios1.png" class="w-100 d-block" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img src="carrusel/aves1.png" class="w-100 d-block" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img src="carrusel/mamiferos1.png" class="w-100 d-block" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img src="carrusel/peces1.png" class="w-100 d-block" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img src="carrusel/reptiles1.png" class="w-100 d-block" alt="Fifth slide">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>  
+
+<div class="row text-center w-100">
+  <h1 class="pr-0">Catalogo de animales</h1>
+  <h3 class="mt-2 pr-0">Los otros animales de la tierra</h3>
+</div>
+
+
+<div class="container">
+  <div class="row justify-content-center ">
+      <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2  mt-5">
+          <div class="mx pb-3 h-100">
+              <div class="card-body h-100 mb-3 pr-0">
+                <img class="card-img-top img-fluid rounded-circle mb-4" src="categorias/anfibios.jpeg" alt="Title">
+                <button type="button" class="border-n btn btn-success w-100 text-white" >Anfibios</button>
+                         </i></div>
+              </div>
+          </div>
+          <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2  mt-5">
+            <div class=" pb-3 h-100">
+                <div class="card-body h-100 mb-3 pr-0">
+                  <img class="card-img-top img-fluid rounded-circle mb-4" src="categorias/aves.jpeg" alt="Title">
+                  <button type="button" class="border-n btn btn-success w-100 text-white" >Aves</button>
+                           </i></div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2  mt-5">
+              <div class=" pb-3 h-100">
+                  <div class="card-body h-100 mb-3 pr-0">
+                    <img class="card-img-top img-fluid rounded-circle mb-4" src="categorias/maniferos.jpeg" alt="Title">
+                    <button type="button" class="border-n btn btn-success w-100 text-white" >Mamiferos</button>
+                             </i></div>
+                  </div>
+              </div>
+              <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2  mt-5">
+                <div class=" pb-3 h-100">
+                    <div class="card-body h-100 mb-3 pr-0">
+                      <img class="card-img-top img-fluid rounded-circle mb-4" src="categorias/peces.jpeg" alt="Title">
+                      <button type="button" class="border-n btn btn-success w-100 text-white" >Peces</button>
+                               </i></div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2  mt-5">
+                  <div class=" pb-3 h-100">
+                      <div class="card-body h-100 mb-3 pr-0">
+                          <img class="card-img-top img-fluid rounded-circle mb-4" src="categorias/reptiles.jpeg" alt="Title">
+                          <a href="catalogo.html" role="button"> <button type="button" class="border-n btn btn-success w-100 text-white">Reptiles</button></a>
+                                 </i></div>
+                      </div>
+                  </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
-  <footer class="bg-secondary">
+
+  
+
+  
+  <footer class="bg-secondary mt-4">
     <div class="container">
       <h1 class="text-center pt-1 pb-1">CLM SKILLS WEB 2021</h1>
       <div class="row ">
@@ -180,22 +228,22 @@
               <a href="https://cifpvirgendegracia.com/" class="text-light text-decoration-none"><h6>C.I.F.P. Virgen de
                 Gracia</h6></a>
             </li>
-
+  
             <li>
               <a href="http://www.iesgregorioprieto.com/" class="text-light text-decoration-none"><h6>I.E.S. Gregorio
                 Prieto</h6> </a>
             </li>
-
+  
             <li>
               <a href="https://www.iespedromercedes.es/" class="text-light text-decoration-none"><h6>I.E.S. Pedro
                 Mercedes</h6></a>
             </li>
-
+  
             <li>
               <a href="http://briandademendoza.es/" class="text-light text-decoration-none"><h6>I.E.S. Brianda de
                 Mendoza</h6></a>
             </li>
-
+  
             <li>
               <a href="http://riberadeltajo.es/nuevaweb/" class="text-light text-decoration-none"><h6>I.E.S. Ribera del
                 Tajo</h6></a>
@@ -221,16 +269,15 @@
       </div>
     </div>
     </div>
-    <h6 class="text-dark text-center pb-2">Catálogo de animales &copy; SIDAM - S1DAW</h6>
+    <h6 class="text-dark text-center pb-2 mb-0">Catálogo de animales &copy; SIDAM - S1DAW</h6>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+  </script>
 </body>
-
 </html>

@@ -16,11 +16,43 @@
 
 <body>
   <header>
-    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-sm bg-green">
+      <a class="navbar-brand" href="index.html"><img src="logos/logo.png" alt="" width="100"></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html" aria-current="page">Inicio </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccionar categoria</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Anfibios</a>
+              <a class="dropdown-item" href="#">Aves</a>
+              <a class="dropdown-item" href="#">Mamiferos</a>
+              <a class="dropdown-item" href="#">Peces</a>
+              <a class="dropdown-item" href="catalogo.html">Reptiles</a>
+              <!--quitar mas tarde as dos lineas de abajo-->
+              <a class="nav-link" href="catalogo.html">catalogo</a>
+              <a class="nav-link" href="quienessomos.html">quienes somos</a>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalId">Registrate </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#modaIniciosesion">Inicia Sesion </a>
+            </li>
+          </li>
+        </ul>
+      </div>
+  </nav>
   </header>
 
   <div class="text-center mt-3">
-    <h2>¿Quienes Somos?</h2>
+    <h1>Quiénes somos</h1>
   </div>
   <div class="container mt-2">
     <p> <strong>catalogodeanimales.es</strong>  es un medio digital independiente y liberal. Somos una redacción que trabaja para publicar información de animales, con rigor y
@@ -28,49 +60,153 @@
   </div>
 
   <div class="container">
-        <div class="card mt-3">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <h3 class="text-blue">¿Que queremos hacer? </h3>
-                </h2>
-            </div>
-            
+    <div class="accordion" id="accordionExample">
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h5 class="m-0 p-0">¿Qué queremos hacer?</h5>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            El proyecto nació con el objetivo de ayudar estudiantes y a todas aquellas personas que
+            conviven
+            con animales y darles los recursos necesarios para mejorar la convivencia entre ellos. Poco
+            después, y viendo la necesidad de dar respuesta a dudas más complejas, se añadieron
+            veterinarios, etólogos, biólogos, adiestradores, etc., para ofrecer un contenido más
+            específico
+            y riguroso. Actualmente, somos más de 20 profesionales expertos en el mundo animal.
+          </div>
         </div>
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <h3 class="text-blue">Nuestro propósito</h3>
-                </h2>
-            </div>
-          
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h5 class="m-0 p-0">Nuestro propósito</h5>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            En <b>catalogoanimales.es</b> trabajamos con tres objetivos claros: educar, informar y
+            concienciar. Nos esforzamos cada día para publicar contenido útil y de calidad, que nos
+            permita
+            ayudar a todos nuestros lectores a convertirse en auténticos expertos animales e informar
+            para
+            mejorar la situación actual del mundo animal, combatiendo el abandono, el maltrato y la
+            explotación.
+          </div>
         </div>
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                    <h3 class="text-blue">¿Qué hacemos en nuestra web?</h3>
-                </h2>
-            </div>
-            
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h5 class="m-0 p-0">¿Qué hacemos en nuestra web?</h5>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Para lograr los objetivos propuestos, compartimos contenido a diario elaborado por expertos
+            y
+            profesionales del sector. A través de nuestros artículos, ayudamos a entender mejor el
+            comportamiento de los animales de compañía y cualquier otro animal, para establecer rutinas
+            positivas para todos, resolvemos dudas, mostramos la realidad de las especies en peligro de
+            extinción y mucho más.
+    
+            Todo el contenido se actualiza constantemente y se aborda desde una perspectiva animalista,
+            respetando en todo momento las necesidades naturales de cada especie. Además, colaboramos
+            activamente con asociaciones, protectoras, fundaciones, clínicas veterinarias, etc., para
+            fomentar la adopción responsable de animales, luchar contra el abandono y resaltar la
+            importancia de acudir a profesionales siempre que sea necesario. En este sentido, nuestros
+            artículos son una guía que no sustituyen la atención veterinaria o el trabajo realizado por
+            un
+            educador o adiestrador canino.
+    
+            Con todo ello, en <b>catalogodeanimales.es</b> aspiramos a convertirnos en la página web de
+            referencia
+            del mundo animal de habla hispana para llegar a un número mayor de personas y, entre todos,
+            mejorar la calidad de vida de los animales.
+          </div>
         </div>
-</div>
-<div class="container">
-<div class="row justify-content-between bg-secondary text-center mt-3">
-  <h4>CLM SKILLS WEB - 2021</h4>
-   <div class="col-1">
-
-   </div><button></button>
-
-</div>
+      </div>
+    </div> 
 </div>
 
+<footer class="bg-secondary mt-4">
+  <div class="container">
+    <h1 class="text-center pt-1 pb-1">CLM SKILLS WEB 2021</h1>
+    <div class="row ">
+      <div class="col-md-1">
+        <a class="btn btn-success text-light btn-sm " href="#" role="button">SUBIR</a>
+      </div>
+      <div class="col-md-5">
+        <h6 class="text-dark text-center ">Centros participantes</h6>
+        <ul class="list-unstyled text-center">
+          <li>
+            <a href="http://www.ies-azarquiel.es/" class="text-light text-decoration-none"><h6>IES Azarquiel</h6></a>
+          </li>
+          <li>
+            <a href="http://www.iesjuanbosco.es/" class="text-light text-decoration-none"><h6>I.E.S. Juan Bosco</h6></a>
+          </li>
+          <li>
+            <a href="http://iesmaestredecalatrava.es/" class="text-light text-decoration-none"><h6>I.E.S. Maestre de
+              Calatrava</h6></a>
+          </li>
+          <li>
+            <a href="https://cifpvirgendegracia.com/" class="text-light text-decoration-none"><h6>C.I.F.P. Virgen de
+              Gracia</h6></a>
+          </li>
+
+          <li>
+            <a href="http://www.iesgregorioprieto.com/" class="text-light text-decoration-none"><h6>I.E.S. Gregorio
+              Prieto</h6> </a>
+          </li>
+
+          <li>
+            <a href="https://www.iespedromercedes.es/" class="text-light text-decoration-none"><h6>I.E.S. Pedro
+              Mercedes</h6></a>
+          </li>
+
+          <li>
+            <a href="http://briandademendoza.es/" class="text-light text-decoration-none"><h6>I.E.S. Brianda de
+              Mendoza</h6></a>
+          </li>
+
+          <li>
+            <a href="http://riberadeltajo.es/nuevaweb/" class="text-light text-decoration-none"><h6>I.E.S. Ribera del
+              Tajo</h6></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <ul class="list-unstyled text-center">
+          <li>
+            <a href="quienessomos.html" class="text-light text-decoration-none"><h6>Quienes somos</h6></a>
+          </li>
+          <li>
+            <a href="#" class="text-light text-decoration-none"><h6>Privacidad</h6></a>
+          </li>
+          <li>
+            <a href="#" class="text-light text-decoration-none"><h6>Contacto</h6></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-1">
+        <a class="btn btn-success text-light btn-sm" href="index.html" role="button">HOME</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <h6 class="text-dark text-center pb-2 mb-0">Catálogo de animales &copy; SIDAM - S1DAW</h6>
+</footer>
 
 
 
+  
 
 
-  <footer>
-    <!-- place footer here -->
-  </footer>
+  
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -82,9 +218,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
