@@ -35,9 +35,6 @@
               <a class="dropdown-item" href="#">Mamiferos</a>
               <a class="dropdown-item" href="#">Peces</a>
               <a class="dropdown-item" href="catalogo.html">Reptiles</a>
-              <!--quitar mas tarde as dos lineas de abajo-->
-              <a class="nav-link" href="catalogo.html">catalogo</a>
-              <a class="nav-link" href="quienessomos.html">quienes somos</a>
             </div>
             <li class="nav-item">
               <a class="nav-link" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalId">Registrate </a>
@@ -50,6 +47,68 @@
       </div>
   </nav>
   </header>
+ 
+  <!-- Modal trigger button -->
+  <!-- Modal Body -->
+  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+  <div class="modal fade " id="modalId" tabindex="-1"  data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered " role="document">
+      <div class="modal-content">
+        <div class="">
+          <h2 class="text-center text-center text-center mt-3" id="modalTitleId">Registro de usuario</h2>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <form action="post">
+            <label for="" class="form-label mt-2">Usuario</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            <label for="" class="form-label mt-2">Contraseña</label>
+            <input type="password" class="form-control" name="" id="" placeholder="">
+            <label for="" class="form-label mt-2">Repite la contraseña</label>
+            <input type="password" class="form-control" name="" id="" placeholder="">
+            <label for="" class="form-label">Email</label>
+            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId">
+            <label for="" class="form-label mt-2">Direccion</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            <label for="" class="form-label mt-2">Telefono</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success  w-100 text-white close" data-dismiss="modal" >Entrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal trigger button -->
+  <!-- Modal Body -->
+  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+  <div class="modal fade" id="modaIniciosesion" tabindex="-1"  data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
+      <div class="modal-content">
+        <div class="">
+          <h2 class="text-center text-center text-center mt-3" id="modalTitleId">Iniciar Sesion</h2>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <form action="post">
+            <label for="" class="form-label mt-2">Usuario</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            <label for="" class="form-label mt-2">Contraseña</label>
+            <input type="password" class="form-control" name="" id="" placeholder="">
+          </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success w-100 text-white close" >Entrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+  const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+</script>
 
   <div class="text-center mt-3">
     <h1>Quiénes somos</h1>
