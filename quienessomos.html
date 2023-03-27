@@ -97,18 +97,18 @@
         <div class="">
           <h2 class="text-center text-center text-center mt-3" id="modalTitleId">Iniciar Sesion</h2>
         </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <form action="post">
+        <form action="post">
+          <div class="modal-body">
+            <div class="mb-3">
               <label for="" class="form-label mt-2">Usuario</label>
               <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
               <label for="" class="form-label mt-2">Contraseña</label>
               <input type="password" class="form-control" name="" id="" placeholder="">
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class=" btn btn-success w-100 text-white " data-bs-dismiss="modal">Entrar</button>
-        </div>
+          <div class="modal-footer">
+            <button type="submit" class=" btn btn-success w-100 text-white " data-bs-dismiss="modal">Entrar</button>
+          </div>
         </form>
       </div>
     </div>
@@ -299,19 +299,19 @@
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <h2 id="exampleModalLabel" class="mt-2 text-center">Escribe un comentario para contactar</h2>
-        <div class="modal-body">
-          <form action="" method="post" class="">
+        <form action="post" class="">
+          <div class="modal-body">
             <p class="text-start text-secondary mb-1">Nombre</p>
             <input type="text" class="form-control w-100 mb-2">
             <p class="text-start text-secondary mb-1">E-mail</p>
             <input type="email" class="form-control w-100 mb-2">
             <p class="text-start text-secondary mb-1">Tu comentario</p>
             <textarea name="comment" id="" cols="30" rows="6" class="w-100 form-control"></textarea>
-            <button type="submit" class="btn btn-success w-100 form-control mt-3"
-              data-bs-dismiss="modal">Enviar</button>
-          </form>
-        </div>
-
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success w-100 text-white " data-bs-dismiss="modal">Enviar</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
